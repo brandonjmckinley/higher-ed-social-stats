@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Higher Education Social Media Statistics </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Libre+Franklin" rel="stylesheet">
+
+</head>
+
+<body onload="CreateTableFromJSON()">
+
+
+
+
+
+	<header>
+
+	  <h1>Higher Ed Social Stats</h1>
+
+	</header>
+
+
+<form>
+
+<div>
+
+		<div class="form-group">
+
+			<label class="form-control-label">Choose which universities you would like to compare. Use the search input to narrow your results.</label>
+
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for universities..">
+
+			<div id="schools">
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="ucla" id="ucla"><span>UCLA</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="berkeley" id="berkeley"><span>UC Berkeley</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="virginia"><span>University of Virginia</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="michigan"><span>University of Michigan</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="ucsb"><span>UCSB</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="chapel"><span>UNC-Chapel Hill</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="irvine"><span>UCI UC Irvine</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="georgiatech"><span>Georgia Tech</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="florida"><span>University of Florida</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="william"><span>William & Mary</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="davis"><span>UC Davis</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="sandiego"><span>UC San Diego</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="georgia"><span>University of Georgia</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="illinois"><span>University of Illinois</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="austin"><span>UT Austin</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="ohiostate"><span>The Ohio State University</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="rutgers"><span>Rutgers University</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="pennstate"><span>Penn State University</span></label>
+				</div><!--form-check-->
+
+				<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" name="university" value="washington"><span>University of Washington</span></label>
+				</div><!--form-check-->
+
+			</div> <!--div id='schools'> -->
+
+		</div><!--form-group-->
+
+</div>
+
+<div class="form-group row">
+	<div class="col-auto">
+		<input class="form-control btn btn-primary" type="submit" value="Submit" id="submit">
+	</div><!--submit button-->
+	<div class="col-auto">
+		<input class="form-control btn btn-secondary" type="reset" value="Start Over">
+	</div><!--start over-->
+</div><!--buttons-->
+
+</form>
+
+<p id="showData"></p>
+
+<footer>
+	<p>This page is an assignment by Brandon McKinley for a University of Florida course: MMC 6936 Coding and Web Apps</p>
+</footer>
+
+
+
+<script src="json/higheredsocialstats.json"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
