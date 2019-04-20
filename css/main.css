@@ -1,0 +1,8 @@
+
+
+#tableheader {
+  display: table-row;
+}
+tr {
+  display: none;
+}

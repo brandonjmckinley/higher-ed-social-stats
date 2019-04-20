@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Higher Education Social Media Statistics </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Libre+Franklin" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="CreateTableFromJSON()">
+
+
+
+
+
+	<header>
+
+	  <h1>Higher Ed Social Stats</h1>
+
+	</header>
+
+<form>
+
+<div>
+
+		<div class="form-group">
+
+			<label class="form-control-label">Choose which universities you would like to compare. Use the search input to narrow your results.</label>
+
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for universities..">
+
+			<div id="schools">
+
+
+
+			</div> <!--div id='schools'> -->
+
+		</div><!--form-group-->
+
+</div>
+
+<div class="form-group row">
+	<div class="col-auto">
+		<input class="form-control btn btn-primary" type="submit" value="Submit" id="submit">
+	</div><!--submit button-->
+	<div class="col-auto">
+		<input class="form-control btn btn-secondary" type="reset" value="Start Over">
+	</div><!--start over-->
+</div><!--buttons-->
+
+</form>
+
+<button onclick="submit()">SUBMIT FOR REAL</button>
+
+<p id="showData"></p> <!---this is where the table goes--->
+
+<footer>
+	<p>This page is an assignment by Brandon McKinley for a University of Florida course: MMC 6936 Coding and Web Apps</p>
+</footer>
+
+
+
+<script src="json/higheredsocialstats.json"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
