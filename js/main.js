@@ -98,7 +98,6 @@ function CreateTableFromJSON() {
         divContainer.appendChild(table);
     }
 
-
 //get data from submit button
 
 function submit() {
