@@ -1,6 +1,30 @@
 
 //JSON
 let instaStats = [
+  {"university": "UCLA", "followers": "208539", "following": "83", "posts": "805", "twitter followers": "177500", "twitter following": "318", "tweets": "11700"},
+  {"university": "UC Berkeley", "followers": "147181", "following": "216", "posts": "1,506", "twitter followers": "165945", "twitter following": "364", "tweets": "16340"},
+  {"university": "University of Virginia", "followers": "83116", "following": "204", "posts": "1,639", "twitter followers": "84519", "twitter following": "1560", "tweets": "25241"},
+  {"university": "University of Michigan", "followers": "225918", "following": "204", "posts": "3,096", "twitter followers": "218286", "twitter following": "808", "tweets": "24391"},
+  {"university": "UCSB", "followers": "42436", "following": "118", "posts": "700", "twitter followers": "41828", "twitter following": "7196", "tweets": "6488"},
+  {"university": "UNC-Chapel Hill", "followers": "96746", "following": "360", "posts": "1,618", "twitter followers": "119885", "twitter following": "1659", "tweets": "29589"},
+  {"university": "UCI UC Irvine", "followers": "48507", "following": "198", "posts": "2,386", "twitter followers": "62960", "twitter following": "518", "tweets": "10458"},
+  {"university": "Georgia Tech", "followers": "57913", "following": "2505", "posts": "2,161", "twitter followers": "169531", "twitter following": "4036", "tweets": "12702"},
+  {"university": "University of Florida", "followers": "145703", "following": "474", "posts": "1,392", "twitter followers": "186714", "twitter following": "573", "tweets": "48339"},
+  {"university": "William & Mary", "followers": "25295", "following": "227", "posts": "946", "twitter followers": "31603", "twitter following": "233", "tweets": "8459"},
+  {"university": "UC Davis", "followers": "57583", "following": "242", "posts": "1,678", "twitter followers": "47353", "twitter following": "997", "tweets": "25624"},
+  {"university": "UC San Diego", "followers": "29141", "following": "31", "posts": "428", "twitter followers": "34361", "twitter following": "5279", "tweets": "16732"},
+  {"university": "University of Georgia", "followers": "107940", "following": "343", "posts": "2,105", "twitter followers": "105964", "twitter following": "519", "tweets": "15149"},
+  {"university": "University of Illinois", "followers": "51746", "following": "1771", "posts": "1,539", "twitter followers": "76024", "twitter following": "8556", "tweets": "36610"},
+  {"university": "UT Austin", "followers": "99185", "following": "149", "posts": "1,030", "twitter followers": "215736", "twitter following": "1323", "tweets": "22554"},
+  {"university": "The Ohio State University", "followers": "193800", "following": "174", "posts": "2,413", "twitter followers": "321717", "twitter following": "697", "tweets": "21402"},
+  {"university": "Rutgers University", "followers": "34335", "following": "371", "posts": "1,923", "twitter followers": "130885", "twitter following": "578", "tweets": "14807"},
+  {"university": "Penn State University", "followers": "139734", "following": "327", "posts": "2,831", "twitter followers": "204649", "twitter following": "1023", "tweets": "31339"},
+  {"university": "University of Washington", "followers": "103658", "following": "174", "posts": "1,108", "twitter followers": "157473", "twitter following": "1987", "tweets": "14718"}
+
+
+]
+
+let instaStats1 = [
 
   {"university": "UCLA", "followers": "207229", "following": "83", "posts": "804"},
   {"university": "UC Berkeley", "followers": "146472", "following": "215", "posts": "1,503"},
