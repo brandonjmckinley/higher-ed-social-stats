@@ -28,15 +28,19 @@
 
 		<div class="form-group">
 
-			<label class="form-control-label">Choose which universities you would like to compare. Use the search input to narrow your results.</label>
 
-			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for universities..">
+				<div class="col-auto">
+					<label class="form-control-label">Choose which universities you would like to compare. Use the search input to narrow your results.</label>
+				</div> <!---col-auto-->
+				<div class="col-auto">
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for universities..">
+				</div> <!---col-auto-->
 
 			<div id="schools">
 
+					<!--main.js will fill the list in here-->
 
-
-			</div> <!--div id='schools'> -->
+			</div> <!--div id="schools" -->
 
 		</div><!--form-group-->
 
@@ -45,8 +49,12 @@
 
 <div class="form-group row">
 	<div class="col-auto">
-		<button onclick="submit()" class="form-control btn btn-primary">SUBMIT FOR REAL</button>
+		<button onclick="submit()" class="form-control btn btn-primary">SUBMIT</button>
 	</div><!--submit button-->
+
+	<div class="col-auto">
+		<button onclick="clear()" class="form-control btn btn-primary">CLEAR</button>
+	</div><!--clear button-->
 </div><!--buttons-->
 
 
@@ -58,7 +66,7 @@
 
 
 
-<script src="json/higheredsocialstats.json"></script>
+<script src="json/higheredsocialstats.js"></script>
 <script src="js/main.js"></script>
 
 </body>

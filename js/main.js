@@ -1,5 +1,5 @@
 
-//create table function
+//JSON
 let instaStats = [
 
   {"university": "UCLA", "followers": "207229", "following": "83", "posts": "804"},
@@ -24,10 +24,13 @@ let instaStats = [
 
   ]
 
-  //write list of checkbox options from json
+
+//write list of checkbox options from json
+//coded on own - no source
 
 for (let i = 0; i < instaStats.length; i++) {
-      university = instaStats[i]["university"];   //https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
+      university = instaStats[i]["university"];
+      //^source: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 
       let formCheckDiv = document.createElement("div");
       formCheckDiv.classList.add("form-check");
@@ -52,10 +55,13 @@ for (let i = 0; i < instaStats.length; i++) {
 
       }
 
+
+//create table from JSON file
+//source: https://www.encodedna.com/javascript/populate-json-data-to-html-table-using-javascript.htm
+
 function CreateTableFromJSON() {
 
         // EXTRACT VALUE FOR HTML HEADER.
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
         let col = [];
         for (let i = 0; i < instaStats.length; i++) {
             for (let key in instaStats[i]) {
@@ -67,6 +73,7 @@ function CreateTableFromJSON() {
 
         // CREATE DYNAMIC TABLE.
         let table = document.createElement("table");
+        table.classList.add("table");
 
         // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
@@ -74,7 +81,7 @@ function CreateTableFromJSON() {
 
         for (let i = 0; i < col.length; i++) {
             let th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
+            th.innerHTML = col[i].toUpperCase();
             tr.id = "tableheader"
             tr.appendChild(th);
         }
@@ -99,6 +106,7 @@ function CreateTableFromJSON() {
     }
 
 //get data from submit button
+//coded on own -- no source
 
 function submit() {
 
@@ -128,13 +136,11 @@ function submit() {
   }
 }
 
-
 //dynamic search
 
-//https://www.w3schools.com/howto/howto_js_filter_lists.asp
-
+//source: https://www.w3schools.com/howto/howto_js_filter_lists.asp
 function myFunction() {
-  // Declare letiables
+  // Declare variables
   let input, filter, schools, div, span, i, txtValue;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
