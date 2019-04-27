@@ -16,7 +16,7 @@
 
 	<div class="row">
 
-    <div class="col col-md-10">
+    <div class="col col-lg-12 col-sm-8">
 
 	<header>
 
@@ -31,12 +31,13 @@
 
 		<div class="form-group">
 
-				<div class="col-auto">
-					<label class="form-control-label">Choose which universities you would like to compare. Use the search input to narrow your results.</label>
-				</div> <!---col-auto-->
-				<div class="col-auto">
+			<div>
+					<label class="form-control-label">Choose which universities you would like to compare. Use the search input to narrow your options.</label>
+			</div>
+			<div>
+
 					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for universities..">
-				</div> <!---col-auto-->
+			</div>
 
 			<div id="schools">
 
@@ -57,24 +58,36 @@
 	</div><!--clear button-->
 </div><!--buttons-->
 
-
-
-<p id="showData"></p> <!---this is where the table goes--->
-
-
-
-<footer>
-	<p>This page is an assignment by Brandon McKinley for a University of Florida course: MMC 6936 Coding and Web Apps</p>
-</footer>
-
 </div> <!--col-->
+</div> <!---row-->
+
+
+
+<div class="row">
+    <div class="col">
+			<div class="table-responsive" id="showData">
+				<!---this is where the table goes-->
+			</div>
+
+
+		</div> <!---col-->
+
+</div> <!---row-->
+
+<div class="row">
+	<div class="col">
+
+		<footer>
+			<p>This page is an assignment by Brandon McKinley for a University of Florida course: MMC 6936 Coding and Web Apps</p>
+		</footer>
+
+	</div> <!--col-->
 </div> <!---row-->
 </div> <!---container-->
 
 <script src="json/higheredsocialstats.js"></script>
+
 <script src="js/main.js"></script>
-
-
 
 </body>
 </html>

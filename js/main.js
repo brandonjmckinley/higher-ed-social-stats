@@ -97,7 +97,8 @@ function CreateTableFromJSON() {
 
         // CREATE DYNAMIC TABLE.
         let table = document.createElement("table");
-        table.classList.add("table");
+        table.classList.add("table", "table-dark", "table-bordered", "nowrap");
+        table.id = "scroll";
 
         // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
@@ -110,6 +111,11 @@ function CreateTableFromJSON() {
             tr.appendChild(th);
         }
 
+
+
+        //let firstTableRow = document.getElementByID("tableheader");
+        //console.log(firstTableRow);
+
         // ADD JSON DATA TO THE TABLE AS ROWS.
         for (let i = 0; i < instaStats.length; i++) {
 
@@ -121,6 +127,7 @@ function CreateTableFromJSON() {
                 let tabCell = tr.insertCell(-1);
                 tabCell.innerHTML = instaStats[i][col[j]];
             }
+
         }
 
         // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
