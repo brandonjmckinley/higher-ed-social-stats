@@ -1,60 +1,37 @@
 
-//JSON
+//JSON copied from the JSON that the Python script created
+//In real world sense, JSON would be generated each night by CHRON job runnign Python script
+
 let instaStats = [
-  {"university": "UCLA", "followers": "208539", "following": "83", "posts": "805", "twitter followers": "177500", "twitter following": "318", "tweets": "11700"},
-  {"university": "UC Berkeley", "followers": "147181", "following": "216", "posts": "1,506", "twitter followers": "165945", "twitter following": "364", "tweets": "16340"},
-  {"university": "University of Virginia", "followers": "83116", "following": "204", "posts": "1,639", "twitter followers": "84519", "twitter following": "1560", "tweets": "25241"},
-  {"university": "University of Michigan", "followers": "225918", "following": "204", "posts": "3,096", "twitter followers": "218286", "twitter following": "808", "tweets": "24391"},
-  {"university": "UCSB", "followers": "42436", "following": "118", "posts": "700", "twitter followers": "41828", "twitter following": "7196", "tweets": "6488"},
-  {"university": "UNC-Chapel Hill", "followers": "96746", "following": "360", "posts": "1,618", "twitter followers": "119885", "twitter following": "1659", "tweets": "29589"},
-  {"university": "UCI UC Irvine", "followers": "48507", "following": "198", "posts": "2,386", "twitter followers": "62960", "twitter following": "518", "tweets": "10458"},
-  {"university": "Georgia Tech", "followers": "57913", "following": "2505", "posts": "2,161", "twitter followers": "169531", "twitter following": "4036", "tweets": "12702"},
-  {"university": "University of Florida", "followers": "145703", "following": "474", "posts": "1,392", "twitter followers": "186714", "twitter following": "573", "tweets": "48339"},
-  {"university": "William & Mary", "followers": "25295", "following": "227", "posts": "946", "twitter followers": "31603", "twitter following": "233", "tweets": "8459"},
-  {"university": "UC Davis", "followers": "57583", "following": "242", "posts": "1,678", "twitter followers": "47353", "twitter following": "997", "tweets": "25624"},
-  {"university": "UC San Diego", "followers": "29141", "following": "31", "posts": "428", "twitter followers": "34361", "twitter following": "5279", "tweets": "16732"},
-  {"university": "University of Georgia", "followers": "107940", "following": "343", "posts": "2,105", "twitter followers": "105964", "twitter following": "519", "tweets": "15149"},
-  {"university": "University of Illinois", "followers": "51746", "following": "1771", "posts": "1,539", "twitter followers": "76024", "twitter following": "8556", "tweets": "36610"},
-  {"university": "UT Austin", "followers": "99185", "following": "149", "posts": "1,030", "twitter followers": "215736", "twitter following": "1323", "tweets": "22554"},
-  {"university": "The Ohio State University", "followers": "193800", "following": "174", "posts": "2,413", "twitter followers": "321717", "twitter following": "697", "tweets": "21402"},
-  {"university": "Rutgers University", "followers": "34335", "following": "371", "posts": "1,923", "twitter followers": "130885", "twitter following": "578", "tweets": "14807"},
-  {"university": "Penn State University", "followers": "139734", "following": "327", "posts": "2,831", "twitter followers": "204649", "twitter following": "1023", "tweets": "31339"},
-  {"university": "University of Washington", "followers": "103658", "following": "174", "posts": "1,108", "twitter followers": "157473", "twitter following": "1987", "tweets": "14718"}
+{"university": "UCLA", "instagram followers": "210088", "instagram following": "83", "instagram posts": "807", "twitter followers": "178092", "twitter following": "318", "tweets": "11735"},
+{"university": "UC Berkeley", "instagram followers": "148210", "instagram following": "217", "instagram posts": "1,511", "twitter followers": "166497", "twitter following": "368", "tweets": "16405"},
+{"university": "University of Virginia", "instagram followers": "83991", "instagram following": "204", "instagram posts": "1,642", "twitter followers": "84710", "twitter following": "1559", "tweets": "25319"},
+{"university": "University of Michigan", "instagram followers": "227342", "instagram following": "206", "instagram posts": "3,106", "twitter followers": "218590", "twitter following": "809", "tweets": "24470"},
+{"university": "UCSB", "instagram followers": "42746", "instagram following": "119", "instagram posts": "703", "twitter followers": "41971", "twitter following": "7194", "tweets": "6532"},
+{"university": "UNC-Chapel Hill", "instagram followers": "97260", "instagram following": "360", "instagram posts": "1,626", "twitter followers": "120047", "twitter following": "1658", "tweets": "29681"},
+{"university": "UCI UC Irvine", "instagram followers": "48936", "instagram following": "198", "instagram posts": "2,393", "twitter followers": "63051", "twitter following": "518", "tweets": "10500"},
+{"university": "Georgia Tech", "instagram followers": "58388", "instagram following": "2509", "instagram posts": "2,173", "twitter followers": "169921", "twitter following": "4044", "tweets": "12725"},
+{"university": "University of Florida", "instagram followers": "146528", "instagram following": "475", "instagram posts": "1,400", "twitter followers": "186919", "twitter following": "575", "tweets": "48480"},
+{"university": "William & Mary", "instagram followers": "25384", "instagram following": "227", "instagram posts": "951", "twitter followers": "31644", "twitter following": "233", "tweets": "8476"},
+{"university": "UC Davis", "instagram followers": "58022", "instagram following": "242", "instagram posts": "1,687", "twitter followers": "47462", "twitter following": "997", "tweets": "25677"},
+{"university": "UC San Diego", "instagram followers": "29380", "instagram following": "31", "instagram posts": "430", "twitter followers": "34457", "twitter following": "5073", "tweets": "16745"},
+{"university": "University of Georgia", "instagram followers": "108393", "instagram following": "343", "instagram posts": "2,110", "twitter followers": "106103", "twitter following": "520", "tweets": "15203"},
+{"university": "University of Illinois", "instagram followers": "52505", "instagram following": "1774", "instagram posts": "1,543", "twitter followers": "76172", "twitter following": "8551", "tweets": "36681"},
+{"university": "UT Austin", "instagram followers": "99946", "instagram following": "150", "instagram posts": "1,033", "twitter followers": "215950", "twitter following": "1323", "tweets": "22578"},
+{"university": "The Ohio State University", "instagram followers": "195069", "instagram following": "174", "instagram posts": "2,421", "twitter followers": "322002", "twitter following": "697", "tweets": "21428"},
+{"university": "Rutgers University", "instagram followers": "34743", "instagram following": "370", "instagram posts": "1,947", "twitter followers": "131021", "twitter following": "578", "tweets": "14898"},
+{"university": "Penn State University", "instagram followers": "140789", "instagram following": "327", "instagram posts": "2,841", "twitter followers": "204814", "twitter following": "1022", "tweets": "31452"},
+{"university": "University of Washington", "instagram followers": "104362", "instagram following": "174", "instagram posts": "1,116", "twitter followers": "157645", "twitter following": "1987", "tweets": "14765"},
 
 
 ]
 
-let instaStats1 = [
-
-  {"university": "UCLA", "followers": "207229", "following": "83", "posts": "804"},
-  {"university": "UC Berkeley", "followers": "146472", "following": "215", "posts": "1,503"},
-  {"university": "University of Virginia", "followers": "82551", "following": "204", "posts": "1,637"},
-  {"university": "University of Michigan", "followers": "225408", "following": "204", "posts": "3,093"},
-  {"university": "UCSB", "followers": "42249", "following": "118", "posts": "699"},
-  {"university": "UNC-Chapel Hill", "followers": "96490", "following": "360", "posts": "1,616"},
-  {"university": "UCI UC Irvine", "followers": "48227", "following": "198", "posts": "2,383"},
-  {"university": "Georgia Tech", "followers": "57709", "following": "2494", "posts": "2,157"},
-  {"university": "University of Florida", "followers": "145244", "following": "474", "posts": "1,390"},
-  {"university": "William & Mary", "followers": "25224", "following": "227", "posts": "944"},
-  {"university": "UC Davis", "followers": "57388", "following": "241", "posts": "1,673"},
-  {"university": "UC San Diego", "followers": "29051", "following": "31", "posts": "426"},
-  {"university": "University of Georgia", "followers": "107695", "following": "342", "posts": "2,104"},
-  {"university": "University of Illinois", "followers": "51388", "following": "1764", "posts": "1,535"},
-  {"university": "UT Austin", "followers": "98788", "following": "149", "posts": "1,030"},
-  {"university": "The Ohio State University", "followers": "193250", "following": "174", "posts": "2,409"},
-  {"university": "Rutgers University", "followers": "34214", "following": "371", "posts": "1,914"},
-  {"university": "Penn State University", "followers": "139314", "following": "327", "posts": "2,827"},
-  {"university": "University of Washington", "followers": "103376", "following": "174", "posts": "1,106"}
-
-  ]
-
 
 //write list of checkbox options from json
-//coded on own - no source
+//coded on own - no source for full code, but used MDN for list of attributes
 
 for (let i = 0; i < instaStats.length; i++) {
       university = instaStats[i]["university"];
-      //^source: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 
       let formCheckDiv = document.createElement("div");
       formCheckDiv.classList.add("form-check");
@@ -98,28 +75,31 @@ function CreateTableFromJSON() {
         // CREATE DYNAMIC TABLE.
         let table = document.createElement("table");
         table.classList.add("table", "table-dark", "table-bordered", "nowrap");
-        table.id = "scroll";
+        table.id = "datatable";
 
         // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
-        let tr = table.insertRow(-1);                   // TABLE ROW.
+        let thead = document.createElement("thead");
+        table.appendChild(thead);
+        let tableRowHeader = document.createElement("tr");
+        thead.appendChild(tableRowHeader);
 
         for (let i = 0; i < col.length; i++) {
             let th = document.createElement("th");      // TABLE HEADER.
             th.innerHTML = col[i].toUpperCase();
-            tr.id = "tableheader"
-            tr.appendChild(th);
+            tableRowHeader.id = "tableheader"
+            tableRowHeader.appendChild(th);
         }
 
 
-
-        //let firstTableRow = document.getElementByID("tableheader");
-        //console.log(firstTableRow);
-
         // ADD JSON DATA TO THE TABLE AS ROWS.
+
+        let tbody = document.createElement("tbody");
+        table.appendChild(tbody);
+
         for (let i = 0; i < instaStats.length; i++) {
 
-            tr = table.insertRow(-1);
+            tr = tbody.insertRow(-1);
             university = instaStats[i]["university"];
             tr.id = university.replace(/\s/g, '').toLowerCase();
 
@@ -136,8 +116,14 @@ function CreateTableFromJSON() {
         divContainer.appendChild(table);
     }
 
+
+
 //get data from submit button
 //coded on own -- no source
+
+let buttons = document.getElementsByTagName("button");
+let submitButton = buttons[0];
+submitButton.addEventListener("click", submit);
 
 function submit() {
 
@@ -166,6 +152,30 @@ function submit() {
       }
   }
 }
+
+
+//clear button
+//coded on own -- no source
+
+let clearButton = buttons[1];
+clearButton.addEventListener("click", clear);
+
+function clear() {
+  let checkboxes = document.getElementsByName("university");
+  let tableRows = document.getElementsByTagName("tr");
+
+
+  for (let i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = false;
+  }
+
+  for (let i = 1; i < tableRows.length; i++) {
+    tableRows[i].style.display = "none";
+  }
+
+}
+
+
 
 //dynamic search
 
